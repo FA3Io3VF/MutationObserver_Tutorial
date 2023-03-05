@@ -74,7 +74,8 @@ const observer = new MutationObserver((mutationsList) => {
   }
 });
 
-observer.observe(document.body, { 
+observer.observe(document.body, /* usiamo come radice il nodo di partenza del body */
+{ 
           childList: true,      /* includiamo tutti i nodi figli */
           subtree: true,        /*  includiamo l'intero sottoalbero del DOM */
           characterData: true  /* Incldiamo i nodi testuali */
