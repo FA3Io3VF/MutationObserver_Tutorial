@@ -53,14 +53,14 @@ _attenzione_ ci sono altri valori.
 <div id="toUpdate">testo che verrà modificato</div>
 ```
 ```javascript
-const osservato = document.querySelector('#observed');
-const aggiornato = document.querySelector('#toUpdate');
+const osserved = document.querySelector('#observed');
+const updated = document.querySelector('#toUpdate');
 
 const observer = new MutationObserver(() => {
-  aggiornato.textContent = osservato.textContent;
+  aggiornato.textContent = osserved.textContent;
 });
 
-observer.observe(osservato, { childList: true });
+observer.observe(osserved, { childList: true });
 ```
 
 ### Osserviamo tutti i nodi testuali di un DOM:
