@@ -83,5 +83,6 @@ observer.observe(document.body, {
 
 La callback controllerà ogni tipo di mutazione ma se muta un testo stamperà il testo con la console.log di ***mutation.target.textContent****.
 
+_Altre Informazioni su:_ htps://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
 
 
